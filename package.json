@@ -1,6 +1,6 @@
 {
   "name": "poc-vue-components",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "Josh Loya <jloya3@oreillyauto.com>",
   "type": "module",
   "exports": {
