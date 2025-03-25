@@ -14,10 +14,13 @@ export default defineConfig({
       entry: resolve(__dirname, "lib/main.js"),
       formats: ["es"]
     },
+    sourcemap: true,
+    minify: false,
     rollupOptions: {
       external: ["vue"]
     }
   },
+  css: { devSourcemap: true },
   resolve: {
     alias: {
       "@": resolve(__dirname, "./src")
