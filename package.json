@@ -1,11 +1,11 @@
 {
   "name": "poc-vue-components",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Josh Loya <jloya3@oreillyauto.com>",
   "type": "module",
   "exports": {
-    ".": "dist/poc-vue-components.js",
-    "./style.css": "dist/style.css"
+    ".": "./dist/poc-vue-components.js",
+    "./style.css": "./dist/style.css"
   },
   "scripts": {
     "dev": "vite",
