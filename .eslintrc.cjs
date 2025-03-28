@@ -6,7 +6,12 @@ module.exports = {
     es2022: true
   },
   plugins: ["vitest"],
-  extends: ["plugin:vue/vue3-essential", "eslint:recommended", "prettier"],
+  extends: [
+    "plugin:vue/vue3-essential",
+    "eslint:recommended",
+    "prettier",
+    "plugin:storybook/recommended"
+  ],
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
