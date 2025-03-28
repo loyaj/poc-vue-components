@@ -1,0 +1,7 @@
+$spacing-sizes: 2xs, xsm, sm, md, lg, xlg, 2xl, 3xl;
+
+@each $size in $spacing-sizes {
+  .gap-#{$size} {
+    gap: var(--values-spacing-#{$size});
+  }
+}

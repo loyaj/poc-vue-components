@@ -1,0 +1,30 @@
+$primary: var(--color-base-primary-500);
+$toolbar-padding: 0 16px;
+$typography-font-family: var(--text-font-family), "Segoe UI", "-apple-system",
+  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font-size: var(--text-font-size-md);
+$input-font-size: var(--text-font-size-md);
+$input-text-color: var(--input-text-body-default);
+
+$button-padding: 0
+  var(--button-primary-spacing-padding-lg, var(--values-spacing-md));
+$button-line-height: 1.5;
+$button-font-size: var(--text-font-size-md, 16px);
+$button-border-radius: var(
+  --components-button-values-radius-sm,
+  var(--values-radius-sm)
+);
+
+$tooltip-fontsize: 12px;
+$tooltip-color: var(--color-text-neutral-000);
+$tooltip-border-radius: 2px;
+$tooltip-padding: 6px 16px;
+$tooltip-background: var(--colors-shade-black-700);
+
+$field-bottom-line-height: var(--text-font-line-height-2xs);
+$field-dense-bottom-font-size: var(--text-font-size-sm);
+$field-dense-with-bottom-padding-bottom: 20px;
+$field-with-bottom-padding-bottom: 20px;
+
+$table-hover-background: transparent;
+$table-sort-icon-font-size: 24px;

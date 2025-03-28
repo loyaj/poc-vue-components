@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
+import { quasar, transformAssetUrls } from "@quasar/vite-plugin";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -23,7 +24,14 @@ const componentEntries = Object.fromEntries(
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue({ template: { transformAssetUrls } }),
+    // @quasar/plugin-vite options list:
+    // https://github.com/quasarframework/quasar/blob/dev/vite-plugin/index.d.ts
+    quasar({
+      sassVariables: "public/quasar-variables.scss"
+    })
+  ],
   build: {
     lib: {
       entry: componentEntries,
@@ -33,7 +41,7 @@ export default defineConfig({
     sourcemap: true,
     minify: false,
     rollupOptions: {
-      external: ["vue", "design-tokens.css"]
+      external: ["vue", "quasar", "design-tokens.css"]
     }
   },
   css: { devSourcemap: true },

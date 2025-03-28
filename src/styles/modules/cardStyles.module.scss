@@ -1,0 +1,39 @@
+.qCard {
+  border: 1px solid var(--color-base-neutral-300);
+  border-radius: var(--values-radius-sm);
+  overflow: hidden;
+
+  & :global(.q-separator) {
+    background: var(--color-base-neutral-300);
+  }
+}
+
+.cardHeader,
+.headerSection {
+  background: var(--colors-neutral-000);
+  padding: var(--values-spacing-md);
+  height: var(--values-spacing-2xl);
+  font-size: var(--text-font-size-lg);
+  line-height: 28.8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.headerSection {
+  cursor: pointer;
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--values-spacing-sm);
+  flex: 1 0 0;
+}
+
+.bodySection {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text-neutral-400);
+  padding: var(--values-spacing-xlg);
+}
