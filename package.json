@@ -4,8 +4,9 @@
   "author": "Josh Loya <jloya3@oreillyauto.com>",
   "type": "module",
   "exports": {
-    ".": "./dist/poc-vue-components.js",
-    "./style.css": "./dist/style.css"
+    "./style.css": "./dist/style.css",
+    "./design-tokens.css": "./dist/design-tokens.css",
+    "./components/*": "./dist/components/*/*.js"
   },
   "scripts": {
     "dev": "vite",
@@ -25,6 +26,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-vitest": "^0.3.22",
     "eslint-plugin-vue": "^9.21.1",
+    "glob": "^10.4.5",
     "globals": "^16.0.0",
     "jsdom": "^26.0.0",
     "prettier": "^3.0.3",

@@ -14,6 +14,7 @@ defineProps({
 <style scoped>
 .my-greeting {
   font-weight: bold;
+  color: var(--colors-primary-990);
 }
 </style>
 <style module>
