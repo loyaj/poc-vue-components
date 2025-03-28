@@ -6,7 +6,7 @@
   "exports": {
     "./style.css": "./dist/style.css",
     "./design-tokens.css": "./dist/design-tokens.css",
-    "./components/*": "./dist/components/*/*.js"
+    "./*": "./dist/components/*/*.js"
   },
   "scripts": {
     "dev": "vite",
